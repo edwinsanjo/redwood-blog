@@ -1,0 +1,215 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* For Dropdown Menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Loading by https://loading.io/ */
+@keyframes ldio-0elo5jzcho7j {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.ldio-0elo5jzcho7j div {
+  position: absolute;
+  width: 42.32px;
+  height: 42.32px;
+  border: 9.200000000000001px solid #60aa4f;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.ldio-0elo5jzcho7j div {
+  animation: ldio-0elo5jzcho7j 1.639344262295082s linear infinite;
+  top: 92px;
+  left: 92px;
+}
+.loadingio-spinner-rolling-x0oqczl096a {
+  width: 184px;
+  height: 184px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-0elo5jzcho7j {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-0elo5jzcho7j div {
+  box-sizing: content-box;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// for markdown
+
+h1 {
+  display: block;
+  font-size: 2.2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  margin-top: 1.6em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 1.4em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 1.33em;
+  margin-top: 1.33em;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font: 0.8em Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  color: #fff;
+  background-clip: padding-box;
+  background-color: #595a5c;
+  padding: 10px;
+  display: inline-block;
+  margin: 0px;
+}
+
+
+pre {
+  border: 1px solid #cacaca;
+  line-height: 1.2em;
+  font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  padding: 10px;
+  overflow:auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #FAFAFB;
+  color: #393939;
+  margin: 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+strike {
+  text-decoration: line-through;
+}
+
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
