@@ -6,18 +6,20 @@ import { toast, Toaster } from '@redwoodjs/web/dist/toast'
 import { useMutation } from '@redwoodjs/web'
 
 const POST_CREATE = gql`
-  mutation PostCreate($type: CreateUserInput!) {
-    createPost(type: $type) {
+  mutation PostCreate($title: String!, $content: String!, $userId: String!) {
+    createPost(
+      title: $title
+      content: $content
+      userId: $userId
+    ) {
       id
-      title
-      content
-      authorId
     }
   }
 `
 
 const CreatePost = () => {
-  const { currentUser } = useAuth()
+  const { currentUser, userMetadata } = useAuth()
+  console.log(userMetadata)
 
   const [create, { loading, error }] = useMutation(POST_CREATE, {
     onCompleted: () => {
@@ -40,13 +42,12 @@ const CreatePost = () => {
       return toast.error('Clear the default text and write your own pls')
     }
     const userid = currentUser.id
+
     create({
       variables: {
-        type: {
           title: title,
           content: content,
-          authorId: userid,
-        }
+          userId: userid,
       },
     })
   }

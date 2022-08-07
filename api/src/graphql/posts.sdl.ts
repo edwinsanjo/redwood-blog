@@ -3,7 +3,7 @@ export const schema = gql`
     id: Int
     title: String!
     content: String!
-    authorId: String!
+    userId: String!
     createdAt: DateTime
   }
 
@@ -20,7 +20,7 @@ export const schema = gql`
     id: Int
     title: String
     content: String
-    authorId: String
+    userId: String
   }
 
   input updatePost {
@@ -35,7 +35,7 @@ export const schema = gql`
   }
 
   type Mutation {
-    createPost(title: String!, content: String!, authorId: String!): Post @requireAuth
+    createPost(title: String!, content: String!, userId: String!): Post @requireAuth
     updatePost(id: Int!, title: String!, content: String!): Post @requireAuth
     deletePost(id: Int!): Post @requireAuth
   }

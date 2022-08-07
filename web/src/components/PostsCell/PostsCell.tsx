@@ -11,7 +11,7 @@ export const QUERY = gql`
       id
       title
       content
-      authorId
+      userId
       createdAt
     }
   }

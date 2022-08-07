@@ -2,7 +2,7 @@ import { Link, routes } from '@redwoodjs/router'
 import UserNameCell from '../UserNameCell/UserNameCell'
 
 const DisplayPosts = ({ item }) => {
-  const { id, title, content, authorId, createdAt } = item
+  const { id, title, content, userId, createdAt } = item
 
   const d = new Date(createdAt)
   const months = [
@@ -27,7 +27,7 @@ const DisplayPosts = ({ item }) => {
     <div className="m-4 border-2 p-4 px-20 shadow-lg">
       <Link to={routes.post({ id: id })}>
         <p className="text-sm">
-          <UserNameCell id={authorId} />
+          <UserNameCell id={userId} />
         </p>
         <p className="text-sm">{date}</p>
         <p className="text-md font-bold">{title}</p>

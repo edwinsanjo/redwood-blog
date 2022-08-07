@@ -17,9 +17,10 @@ export const post: QueryResolvers['post'] = ({ id }) => {
 }
 
 export const createPost: MutationResolvers['createPost'] = ({ input }) => {
-  return db.post.create({
-    data: input,
-  })
+  // return db.post.create({
+  //   data: input,
+  // })
+  console.log(input)
 }
 
 export const updatePost: MutationResolvers['updatePost'] = ({ id, input }) => {
